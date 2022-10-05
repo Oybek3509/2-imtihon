@@ -1,0 +1,136 @@
+.header {
+    &__list-map {
+        display: inline;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #333333;
+    }
+
+    &__all-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 190px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+
+        &__number {
+            display: flex;
+            padding-right: 25px;
+            list-style-type: none;
+
+            &:nth-child(1) {
+                &::before {
+                    content: "";
+                }
+            }
+
+            &::before {
+                content: "\2022";
+                color: #FFBD54;
+                font-weight: bold;
+            }
+        }
+
+        &__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            color: #333333;
+            transition: 0.2s ease;
+
+            &:hover {
+                color: #FFBD54;
+                transition: 0.2s ease;
+            }
+
+            &:active {
+                color: #333333;
+                opacity: 0.6;
+                transition: 0.2s ease;
+            }
+        }
+    }
+
+    &__item-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #333333;
+    }
+
+    &__wrapper {
+        background-color: #fff;
+
+        &__logo {
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &:active {
+                opacity: 0.6;
+            }
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            margin-left: 25%;
+        }
+
+        &__item {
+            margin-left: 23px;
+            margin-right: 23px;
+        }
+
+        &__link {
+            padding: 0;
+            margin: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 21px;
+            color: #333333;
+            border-bottom: 5px solid transparent;
+            transition: all 0.2s ease;
+
+            &:hover {
+                border-bottom: 5px solid #F4FFAD;
+                transition: 0.2s ease;
+            }
+
+            &:active {
+                border-bottom: 5px solid #F4FFAD;
+                opacity: 0.6;
+                transition: 0.2s ease;
+            }
+        }
+    }
+
+    &__wrapper-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__wrapper-send {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: right;
+        color: #333333;
+    }
+}

@@ -1,0 +1,78 @@
+.hero {
+    &__container {
+        max-width: 600px;
+        width: 100%;
+        margin-left: auto;
+        margin-top: 150px;
+        margin-right: 20px;
+    }
+
+    &__bg-img {
+        width: 870px;
+        height: 840px;
+        background-image: url('../../media/bg-images.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: calc(50% - 690px);
+        top: -10px;
+        z-index: -1;
+    }
+
+    &__title {
+        max-width: 600px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 55px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        max-width: 495px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #949494;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        font-family: 'Futura PT';
+        background: #333333;
+        border-radius: 3px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+        border: none;
+        padding: 15px 48px;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:hover {
+            background: #FFBD54;
+            border-radius: 3px;
+            transition: 0.2s ease;
+        }
+
+        &:active {
+            background: #FFBD54;
+            border-radius: 3px;
+            opacity: 0.6;
+            transition: 0.2s ease;
+        }
+    }
+
+    &__bird-img {
+        width: 350px;
+        height: 430px;
+        background-image: url('../../media/birds-img.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 500px;
+    }
+}
